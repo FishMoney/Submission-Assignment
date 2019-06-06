@@ -1,6 +1,6 @@
 /**
  * 
- * @author //Put your first and last name here
+ * @author //Ethan Karczewski
  * 
  * 
  * Assignment Instructions:
@@ -26,5 +26,32 @@ public class You{
 	private int age;
 
 	// Write your code here
+	
+	public You()
+	{
+		firstName = "Ethan";
+		lastName = "Karczewski";
+		favoriteAnimal = "Chris and Garrett. I cannot decide.";
+		age = 17;
+	}
+	
+	public String getFullName()
+	{
+		return firstName + " " + lastName;
+	}
+	
+	public String setfavoriteAnimal(String animal)
+	{
+		favoriteAnimal = animal;
+		return favoriteAnimal;
+	}
+	
+	public int happyBirthday()
+	{
+		System.out.println("Happy Birthday");
+		age++;
+		return age;
+		
+	}
 	
 }
